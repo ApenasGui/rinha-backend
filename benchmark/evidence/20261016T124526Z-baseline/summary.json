@@ -1,0 +1,108 @@
+{
+  "label": "baseline",
+  "finished_at_utc": "2026-10-16T12:50:25.418307+00:00",
+  "gatling_exit_code": 0,
+  "person_count": 4843,
+  "measured_duration_seconds": 204.942,
+  "global": {
+    "requests": 72298,
+    "ok": 10216,
+    "ko": 62082,
+    "error_rate_percent": 85.8696,
+    "requests_per_second": 352.67317073170733,
+    "latency_ms": {
+      "min": 0,
+      "mean": 955,
+      "p50": 0,
+      "p75": 5,
+      "p95": 9249,
+      "p99": 10135,
+      "max": 20595,
+      "p99_ok": 11428
+    }
+  },
+  "requests": {
+    "busca inválida": {
+      "requests": 4190,
+      "ok": 1086,
+      "ko": 3104,
+      "error_rate_percent": 74.0811,
+      "requests_per_second": 20.4390243902439,
+      "latency_ms": {
+        "min": 0,
+        "mean": 5,
+        "p50": 0,
+        "p75": 2,
+        "p95": 14,
+        "p99": 105,
+        "max": 767,
+        "p99_ok": 306
+      }
+    },
+    "busca válida": {
+      "requests": 9590,
+      "ok": 955,
+      "ko": 8635,
+      "error_rate_percent": 90.0417,
+      "requests_per_second": 46.78048780487805,
+      "latency_ms": {
+        "min": 0,
+        "mean": 1068,
+        "p50": 0,
+        "p75": 9,
+        "p95": 9742,
+        "p99": 11153,
+        "max": 14479,
+        "p99_ok": 13557
+      }
+    },
+    "criação": {
+      "requests": 54615,
+      "ok": 5196,
+      "ko": 49419,
+      "error_rate_percent": 90.4861,
+      "requests_per_second": 266.4146341463415,
+      "latency_ms": {
+        "min": 0,
+        "mean": 843,
+        "p50": 0,
+        "p75": 2,
+        "p95": 8417,
+        "p99": 10098,
+        "max": 11035,
+        "p99_ok": 10395
+      }
+    },
+    "consulta": {
+      "requests": 3903,
+      "ok": 2979,
+      "ko": 924,
+      "error_rate_percent": 23.6741,
+      "requests_per_second": 19.039024390243902,
+      "latency_ms": {
+        "min": 0,
+        "mean": 3267,
+        "p50": 194,
+        "p75": 7081,
+        "p95": 10054,
+        "p99": 12901,
+        "max": 20595,
+        "p99_ok": 13916
+      }
+    }
+  },
+  "errors": {
+    "j.n.ConnectException: finishConnect(..) failed: Connection refused": 54642,
+    "j.i.IOException: Premature close": 5469,
+    "status.find.in(201,422,400), but actually found 500": 1316,
+    "status.find.in([200, 209], 304), found 500": 655
+  },
+  "report": "gatling/rinhabackendsimulation-20261016124538641/index.html",
+  "simulation_log_sha256": "e9bb0ea0bd83a5441ea5df72d318ca9abe6dc7539cec59ffcff085d397514be3",
+  "official_commit": "da99faf563c23dca43a5afa2ac31a34ca8cc39e6",
+  "comparability": "Local reproduction; hardware differs from the official 2023 run. This is not an official ranking entry.",
+  "validity": "invalid_infrastructure",
+  "excluded_from_comparison": true,
+  "reason": "Docker published localhost:9999 stopped accepting connections during the run, while Nginx container IP kept responding HTTP 200. Final HTTP count collection failed; the count was recovered directly with SELECT count(*). Not a performance measurement.",
+  "final_count_source": "direct PostgreSQL SELECT count(*), recovered after failed HTTP collection"
+}

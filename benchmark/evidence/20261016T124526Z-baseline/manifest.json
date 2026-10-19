@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "source_run": "20261016T124526Z-baseline",
+  "archived_at_utc": "2026-10-16T12:50:26.469219+00:00",
+  "official_commit": "da99faf563c23dca43a5afa2ac31a34ca8cc39e6",
+  "person_count": 4843,
+  "simulation_log_sha256": "e9bb0ea0bd83a5441ea5df72d318ca9abe6dc7539cec59ffcff085d397514be3",
+  "report_directory": "rinhabackendsimulation-20261016124538641",
+  "artifacts": {
+    "docker-after.log.gz": {
+      "sha256": "b6cdf5e28d770b640ed9ffec56a153b98b59fda8bb5671b6ab52e18efcc76a4a",
+      "bytes": 38957
+    },
+    "docker-before.log.gz": {
+      "sha256": "8e7f840fad01884a47960157bc422b6ece51b745a58e37ac123e637a6c07fe1a",
+      "bytes": 1537
+    },
+    "docker-limits.json": {
+      "sha256": "ffb7b32b7957735c40f226db3f02bae3f3e11bcdf5175e78840155973e9f23df",
+      "bytes": 537
+    },
+    "environment.json": {
+      "sha256": "4f43e533396465aaf9812b0208a6e806376b7bfe972b89f5dd803b85b91a9e58",
+      "bytes": 10748
+    },
+    "final-count.txt": {
+      "sha256": "d4d694643ace2de72977ed001e7d4dabfb851d2cc9ee4d745165df31079feb02",
+      "bytes": 5
+    },
+    "gatling-exit-code.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "gatling-report.tar.gz": {
+      "sha256": "981d7997a7408e84e8c2f174fc81cdf6b155727f5173c0fc67571864bba2d77c",
+      "bytes": 1066172
+    },
+    "gatling.log.gz": {
+      "sha256": "fd69a52257c3cea63520553684173c1e4eb644aa1daad3682880de18e7f4d3ee",
+      "bytes": 5245
+    },
+    "initial-count.txt": {
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    "resource-samples.jsonl": {
+      "sha256": "b3fd9f962c9431383cf73401deddc3f8607ce8d6cd925050fd0b2815b594dbda",
+      "bytes": 45701
+    },
+    "summary.json": {
+      "sha256": "a2953fbd1db83a0bfe76541fb67a57f4ed8bac6de4fa16105658677890476204",
+      "bytes": 3061
+    },
+    "time-series.json": {
+      "sha256": "a854fa693c397158a2cf9eae5b7fa1c9937cc1922effada6e78f0c611df048f5",
+      "bytes": 3224
+    },
+    "tools.json": {
+      "sha256": "bb39ab51437ca2f4371baa5891e4979d9654c3895d61b86067e3a7b729036cb8",
+      "bytes": 1915
+    }
+  },
+  "integrity": "SHA256SUMS covers all artifacts and this manifest; its own checksum is excluded."
+}

@@ -1,0 +1,17 @@
+# Reproduce the third measurement: more database CPU, less CPU per API.
+services:
+  api1:
+    deploy:
+      resources:
+        limits:
+          cpus: "0.25"
+  api2:
+    deploy:
+      resources:
+        limits:
+          cpus: "0.25"
+  db:
+    deploy:
+      resources:
+        limits:
+          cpus: "0.85"

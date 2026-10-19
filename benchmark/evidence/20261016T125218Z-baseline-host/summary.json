@@ -1,0 +1,105 @@
+{
+  "label": "baseline-host",
+  "finished_at_utc": "2026-10-16T12:56:23.385643+00:00",
+  "gatling_exit_code": 0,
+  "person_count": 8261,
+  "measured_duration_seconds": 216.662,
+  "global": {
+    "requests": 75995,
+    "ok": 23550,
+    "ko": 52445,
+    "error_rate_percent": 69.0111,
+    "requests_per_second": 350.2073732718894,
+    "latency_ms": {
+      "min": 0,
+      "mean": 7576,
+      "p50": 10001,
+      "p75": 10249,
+      "p95": 12815,
+      "p99": 14389,
+      "max": 28960,
+      "p99_ok": 13878
+    }
+  },
+  "requests": {
+    "busca inválida": {
+      "requests": 4190,
+      "ok": 3994,
+      "ko": 196,
+      "error_rate_percent": 4.6778,
+      "requests_per_second": 19.308755760368662,
+      "latency_ms": {
+        "min": 0,
+        "mean": 656,
+        "p50": 2,
+        "p75": 114,
+        "p95": 4811,
+        "p99": 9672,
+        "max": 11842,
+        "p99_ok": 8681
+      }
+    },
+    "busca válida": {
+      "requests": 9590,
+      "ok": 1682,
+      "ko": 7908,
+      "error_rate_percent": 82.4609,
+      "requests_per_second": 44.193548387096776,
+      "latency_ms": {
+        "min": 2,
+        "mean": 9010,
+        "p50": 10012,
+        "p75": 10735,
+        "p95": 13390,
+        "p99": 15889,
+        "max": 28960,
+        "p99_ok": 21600
+      }
+    },
+    "criação": {
+      "requests": 54625,
+      "ok": 13660,
+      "ko": 40965,
+      "error_rate_percent": 74.9931,
+      "requests_per_second": 251.72811059907835,
+      "latency_ms": {
+        "min": 0,
+        "mean": 7986,
+        "p50": 10002,
+        "p75": 10293,
+        "p95": 12647,
+        "p99": 13944,
+        "max": 20136,
+        "p99_ok": 12045
+      }
+    },
+    "consulta": {
+      "requests": 7590,
+      "ok": 4214,
+      "ko": 3376,
+      "error_rate_percent": 44.4796,
+      "requests_per_second": 34.97695852534562,
+      "latency_ms": {
+        "min": 0,
+        "mean": 6638,
+        "p50": 9997,
+        "p75": 10045,
+        "p95": 13736,
+        "p99": 18963,
+        "max": 23313,
+        "p99_ok": 10238
+      }
+    }
+  },
+  "errors": {
+    "status.find.in(201,422,400), but actually found 500": 30116,
+    "j.i.IOException: Premature close": 13034,
+    "status.find.in([200, 209], 304), found 500": 9277,
+    "j.n.ConnectException: finishConnect(..) failed: Connection refused": 18
+  },
+  "report": "gatling/rinhabackendsimulation-20261016125227449/index.html",
+  "simulation_log_sha256": "bdab319f1bd346554d37d704051325b1062e958afd90f8bdfc3ebbf9ff2f0cd5",
+  "official_commit": "da99faf563c23dca43a5afa2ac31a34ca8cc39e6",
+  "comparability": "Local reproduction; hardware differs from the official 2023 run. This is not an official ranking entry.",
+  "validity": "valid"
+}

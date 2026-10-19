@@ -1,0 +1,316 @@
+{
+  "started_at_utc": "2026-10-16T13:02:59.980691+00:00",
+  "label": "tuned-host",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "kernel": "6.18.44",
+  "logical_cpus_visible": 5,
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "task_cgroup": {
+    "cpu.max": "400000 100000",
+    "memory.max": "34359738368",
+    "cpuset.cpus.effective": "0-4",
+    "cpu.stat": "usage_usec 1564296639\nuser_usec 1048235068\nsystem_usec 516061571\nnice_usec 0\nnr_periods 15127\nnr_throttled 151\nthrottled_usec 10059947\nnr_bursts 0\nburst_usec 0"
+  },
+  "lscpu": {
+    "lscpu": [
+      {
+        "field": "Architecture:",
+        "data": "x86_64"
+      },
+      {
+        "field": "CPU op-mode(s):",
+        "data": "32-bit, 64-bit"
+      },
+      {
+        "field": "Address sizes:",
+        "data": "46 bits physical, 57 bits virtual"
+      },
+      {
+        "field": "Byte Order:",
+        "data": "Little Endian"
+      },
+      {
+        "field": "CPU(s):",
+        "data": "5"
+      },
+      {
+        "field": "On-line CPU(s) list:",
+        "data": "0-4"
+      },
+      {
+        "field": "Vendor ID:",
+        "data": "GenuineIntel"
+      },
+      {
+        "field": "Model name:",
+        "data": "INTEL(R) XEON(R) PLATINUM 8573C"
+      },
+      {
+        "field": "CPU family:",
+        "data": "6"
+      },
+      {
+        "field": "Model:",
+        "data": "207"
+      },
+      {
+        "field": "Thread(s) per core:",
+        "data": "1"
+      },
+      {
+        "field": "Core(s) per socket:",
+        "data": "5"
+      },
+      {
+        "field": "Socket(s):",
+        "data": "1"
+      },
+      {
+        "field": "Stepping:",
+        "data": "2"
+      },
+      {
+        "field": "BogoMIPS:",
+        "data": "4599.99"
+      },
+      {
+        "field": "Flags:",
+        "data": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves arat avx512vbmi umip avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid fsrm arch_capabilities"
+      },
+      {
+        "field": "Hypervisor vendor:",
+        "data": "KVM"
+      },
+      {
+        "field": "Virtualization type:",
+        "data": "full"
+      },
+      {
+        "field": "L1d cache:",
+        "data": "144 KiB (3 instances)"
+      },
+      {
+        "field": "L1i cache:",
+        "data": "96 KiB (3 instances)"
+      },
+      {
+        "field": "L2 cache:",
+        "data": "6 MiB (3 instances)"
+      },
+      {
+        "field": "L3 cache:",
+        "data": "260 MiB (1 instance)"
+      },
+      {
+        "field": "NUMA node(s):",
+        "data": "1"
+      },
+      {
+        "field": "NUMA node0 CPU(s):",
+        "data": "0-4"
+      },
+      {
+        "field": "Vulnerability Gather data sampling:",
+        "data": "Not affected"
+      },
+      {
+        "field": "Vulnerability Ghostwrite:",
+        "data": "Not affected"
+      },
+      {
+        "field": "Vulnerability Indirect target selection:",
+        "data": "Vulnerable"
+      },
+      {
+        "field": "Vulnerability Itlb multihit:",
+        "data": "Not affected"
+      },
+      {
+        "field": "Vulnerability L1tf:",
+        "data": "Not affected"
+      },
+      {
+        "field": "Vulnerability Mds:",
+        "data": "Not affected"
+      },
+      {
+        "field": "Vulnerability Meltdown:",
+        "data": "Not affected"
+      },
+      {
+        "field": "Vulnerability Mmio stale data:",
+        "data": "Not affected"
+      },
+      {
+        "field": "Vulnerability Old microcode:",
+        "data": "Not affected"
+      },
+      {
+        "field": "Vulnerability Reg file data sampling:",
+        "data": "Not affected"
+      },
+      {
+        "field": "Vulnerability Retbleed:",
+        "data": "Vulnerable"
+      },
+      {
+        "field": "Vulnerability Spec rstack overflow:",
+        "data": "Not affected"
+      },
+      {
+        "field": "Vulnerability Spec store bypass:",
+        "data": "Vulnerable"
+      },
+      {
+        "field": "Vulnerability Spectre v1:",
+        "data": "Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers"
+      },
+      {
+        "field": "Vulnerability Spectre v2:",
+        "data": "Vulnerable; STIBP: disabled; PBRSB-eIBRS: Not affected; BHI: Vulnerable"
+      },
+      {
+        "field": "Vulnerability Srbds:",
+        "data": "Not affected"
+      },
+      {
+        "field": "Vulnerability Tsa:",
+        "data": "Not affected"
+      },
+      {
+        "field": "Vulnerability Tsx async abort:",
+        "data": "Vulnerable"
+      },
+      {
+        "field": "Vulnerability Vmscape:",
+        "data": "Not affected"
+      }
+    ]
+  },
+  "memory": "total        used        free      shared  buff/cache   available\nMem:     35743784960  4878016512 14967394304  3535953920 19958730752 30865768448\nSwap:              0           0           0",
+  "docker_version": "{\"Client\":{\"Version\":\"28.4.0\",\"ApiVersion\":\"1.51\",\"DefaultAPIVersion\":\"1.51\",\"GitCommit\":\"d8eb465\",\"GoVersion\":\"go1.24.7\",\"Os\":\"linux\",\"Arch\":\"amd64\",\"BuildTime\":\"Wed Sep  3 20:56:28 2025\",\"Context\":\"default\"},\"Server\":{\"Platform\":{\"Name\":\"Docker Engine - Community\"},\"Components\":[{\"Name\":\"Engine\",\"Version\":\"28.4.0\",\"Details\":{\"ApiVersion\":\"1.51\",\"Arch\":\"amd64\",\"BuildTime\":\"Wed Sep  3 20:58:50 2025\",\"Experimental\":\"false\",\"GitCommit\":\"249d679\",\"GoVersion\":\"go1.24.7\",\"KernelVersion\":\"6.18.44\",\"MinAPIVersion\":\"1.24\",\"Os\":\"linux\"}},{\"Name\":\"containerd\",\"Version\":\"v1.7.28\",\"Details\":{\"GitCommit\":\"b98a3aace656320842a23f4a392a33f46af97866\"}},{\"Name\":\"runc\",\"Version\":\"1.3.0\",\"Details\":{\"GitCommit\":\"v1.3.0-0-g4ca628d\"}},{\"Name\":\"docker-init\",\"Version\":\"0.19.0\",\"Details\":{\"GitCommit\":\"de40ad0\"}}],\"Version\":\"28.4.0\",\"ApiVersion\":\"1.51\",\"MinAPIVersion\":\"1.24\",\"GitCommit\":\"249d679\",\"GoVersion\":\"go1.24.7\",\"Os\":\"linux\",\"Arch\":\"amd64\",\"KernelVersion\":\"6.18.44\",\"BuildTime\":\"2025-09-03T20:58:50.000000000+00:00\"}}",
+  "compose_version": "2.40.3",
+  "compose_files": "docker-compose.yml:docker-compose.host.yml",
+  "docker_host": {
+    "Driver": "vfs",
+    "NCPU": 5,
+    "MemTotal": 35743784960,
+    "CgroupDriver": "cgroupfs",
+    "CgroupVersion": "2",
+    "KernelVersion": "6.18.44",
+    "OperatingSystem": "Debian GNU/Linux 13 (trixie) (containerized)",
+    "DockerRootDir": "/var/lib/docker"
+  },
+  "runtime_images": [
+    {
+      "container": "rinha-backend-api1-1",
+      "image_id": "sha256:9fb5aeee3b1eacb61c75f18ba156ca1e0becd7f1f497bb52b7e50e6a9573105d",
+      "repo_digests": [],
+      "architecture": "amd64",
+      "os": "linux"
+    },
+    {
+      "container": "rinha-backend-api2-1",
+      "image_id": "sha256:9fb5aeee3b1eacb61c75f18ba156ca1e0becd7f1f497bb52b7e50e6a9573105d",
+      "repo_digests": [],
+      "architecture": "amd64",
+      "os": "linux"
+    },
+    {
+      "container": "rinha-backend-db-1",
+      "image_id": "sha256:e8538db784b854a9baac5c1be6d059dcf0db257af2d94c8c5807b5fc15f11222",
+      "repo_digests": [
+        "postgres@sha256:0ea6700a3b4f0ae6ce746519073558aed4d88a79d8d07622a9a644946c7319c4"
+      ],
+      "architecture": "amd64",
+      "os": "linux"
+    },
+    {
+      "container": "rinha-backend-nginx-1",
+      "image_id": "sha256:34e04bb6b4bb37d45845842374be0cd181723daffb230849b1984aaeaa96faba",
+      "repo_digests": [
+        "nginx@sha256:552e7481ca93ffccd046aa658dbbed22caefbc09c66fa7cd247cbb90b8a5c609"
+      ],
+      "architecture": "amd64",
+      "os": "linux"
+    }
+  ],
+  "git_commit": "c08dd3339fa35109304ccfc689d947a44347f91e",
+  "working_tree": "M README.md\n?? .dockerignore\n?? .gitignore\n?? Dockerfile\n?? benchmark/\n?? docker-compose.dev.yml\n?? docker-compose.host.yml\n?? docker-compose.reference.yml\n?? docker-compose.yml\n?? docs/\n?? infra/\n?? package-lock.json\n?? package.json\n?? scripts/\n?? src/\n?? test/\n?? tsconfig.build.json\n?? tsconfig.json",
+  "file_sha256": {
+    "src/pessoa.ts": "f55875456071a6368d3acf61c2695859a3e12e096115ee1557741bc119f2fec8",
+    "src/app.controller.ts": "0ed5b811597dcd65aec50ae88f47f5df56573b2e86770cdd49efd51d3a808fa4",
+    "src/main.ts": "e5b1200faf1d204446ee8c55b61e6116d624ed92ab7da7b24ce8007c5a96982f",
+    "src/app.module.ts": "611be1d5f1c7b87280c07bdd1faa3f41762020307aab76f64091f57971837f65",
+    "src/pessoas.service.ts": "611f8894b9ada77193847c3c338ac4a3cdd6eb88466879dbd5694af3bf5089f3",
+    "infra/init.sql": "10d82c740b9893f8092b217f3d34e43335e8ed6395a6e946f8021f7be6c346a0",
+    "infra/nginx.host.conf": "7aa5be4d1f4f6a7ace2f2f5431415df9cb1c216eadec4cf4b908adec32edce22",
+    "infra/nginx.conf": "e161a71287d48efb360ea85aa739ce618fe1a300e11f44030a752a383caed2f1",
+    "docker-compose.reference.yml": "cb8f0de3220a2f7a35e5179feb8e6dc51e840d90f61d3519c66fc6558a0af179",
+    "docker-compose.host.yml": "bb1517601333762dee35da113e2f732ef424ef5b673cd196a90c6a546f4fcbeb",
+    "docker-compose.yml": "42282d711e17ef156536bffa6abe2bea5a8ccd0c22a58e0c80c9b53448d33578",
+    "docker-compose.dev.yml": "fafe766cc0fba0ca9725f62bf176164e7527e1c36d2aa5cfe11a0efad243297d",
+    "Dockerfile": "7e9b3530ff62fe4a6332aa19e9df4f5d3266f9750bbc4f578902f7832c1787ad",
+    "package.json": "7b0b41a86d39d72dc600cbfd88864ebe3e44a56af931dcf1df8dfad52f8e0cf6",
+    "package-lock.json": "cfa5da4107a84f3cdd2c0a19012f1d858b33d32f9860284d9893efcbb2f7ef79",
+    "benchmark/official-source.json": "660aed99ce5ad9d1d44c7a42f42fbef4dc949c548195c3b3256c89fc8628b0d4"
+  },
+  "services": {
+    "api1": {
+      "image": "rinha-backend-nest:local",
+      "network_mode": "host",
+      "limits": {
+        "cpus": 0.25,
+        "memory": "402653184"
+      },
+      "settings": {
+        "NODE_ENV": "production",
+        "SEARCH_MODE": "indexed",
+        "CACHE_SIZE": "10000",
+        "DB_POOL_SIZE": "15"
+      }
+    },
+    "api2": {
+      "image": "rinha-backend-nest:local",
+      "network_mode": "host",
+      "limits": {
+        "cpus": 0.25,
+        "memory": "402653184"
+      },
+      "settings": {
+        "NODE_ENV": "production",
+        "SEARCH_MODE": "indexed",
+        "CACHE_SIZE": "10000",
+        "DB_POOL_SIZE": "15"
+      }
+    },
+    "db": {
+      "image": "postgres:16-bookworm@sha256:0ea6700a3b4f0ae6ce746519073558aed4d88a79d8d07622a9a644946c7319c4",
+      "network_mode": "host",
+      "limits": {
+        "cpus": 0.85,
+        "memory": "1744830464"
+      },
+      "settings": {}
+    },
+    "nginx": {
+      "image": "nginx:1.28-bookworm@sha256:552e7481ca93ffccd046aa658dbbed22caefbc09c66fa7cd247cbb90b8a5c609",
+      "network_mode": "host",
+      "limits": {
+        "cpus": 0.15,
+        "memory": "268435456"
+      },
+      "settings": {}
+    }
+  },
+  "generator_jvm_options": "-Xms256m -Xmx1g -XX:ActiveProcessorCount=2",
+  "generator_location": "same cloud machine, outside the application containers and their resource budget",
+  "official_injection_seconds": 205,
+  "initial_person_count": 0
+}

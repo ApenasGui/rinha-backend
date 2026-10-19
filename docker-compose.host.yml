@@ -1,0 +1,48 @@
+# Linux: bypass the host port forwarding layer while retaining each container's
+# cgroup limits. Apply after docker-compose.yml with Docker Compose >= 2.24.
+services:
+  api1:
+    network_mode: host
+    environment:
+      HOST: 127.0.0.1
+      PORT: "3001"
+      DATABASE_URL: postgres://rinha:rinha@127.0.0.1:5432/rinha
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:'+process.env.PORT+'/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+  api2:
+    network_mode: host
+    environment:
+      HOST: 127.0.0.1
+      PORT: "3002"
+      DATABASE_URL: postgres://rinha:rinha@127.0.0.1:5432/rinha
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:'+process.env.PORT+'/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+  nginx:
+    network_mode: host
+    ports: !reset []
+    volumes:
+      - ./infra/nginx.host.conf:/etc/nginx/nginx.conf:ro
+  db:
+    network_mode: host
+    command:
+      - postgres
+      - -c
+      - listen_addresses=127.0.0.1
+      - -c
+      - max_connections=50
+      - -c
+      - shared_buffers=384MB
+      - -c
+      - effective_cache_size=1024MB
+      - -c
+      - work_mem=4MB
+      - -c
+      - maintenance_work_mem=128MB
+      - -c
+      - random_page_cost=1.1
+      - -c
+      - checkpoint_timeout=15min
+      - -c
+      - max_wal_size=1GB
+      - -c
+      - jit=off

@@ -1,0 +1,103 @@
+{
+  "captured_at_utc": "2026-10-16T12:56:29.872686+00:00",
+  "containers": {
+    "api1": {
+      "running": true,
+      "container_oom_killed": false,
+      "memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat": {
+        "usage_usec": 38628838,
+        "user_usec": 32721051,
+        "system_usec": 5907786,
+        "nice_usec": 0,
+        "nr_periods": 2134,
+        "nr_throttled": 545,
+        "throttled_usec": 82730849,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      }
+    },
+    "api2": {
+      "running": true,
+      "container_oom_killed": false,
+      "memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat": {
+        "usage_usec": 38971269,
+        "user_usec": 33293256,
+        "system_usec": 5678013,
+        "nice_usec": 0,
+        "nr_periods": 2125,
+        "nr_throttled": 599,
+        "throttled_usec": 92885868,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      }
+    },
+    "db": {
+      "running": true,
+      "container_oom_killed": false,
+      "memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 0,
+        "oom": 0,
+        "oom_kill": 0,
+        "oom_group_kill": 0
+      },
+      "cpu_stat": {
+        "usage_usec": 113485808,
+        "user_usec": 100594284,
+        "system_usec": 12891524,
+        "nice_usec": 0,
+        "nr_periods": 2180,
+        "nr_throttled": 1623,
+        "throttled_usec": 641620335,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      }
+    },
+    "nginx": {
+      "running": true,
+      "container_oom_killed": true,
+      "memory_events": {
+        "low": 0,
+        "high": 0,
+        "max": 95,
+        "oom": 2,
+        "oom_kill": 2,
+        "oom_group_kill": 0
+      },
+      "cpu_stat": {
+        "usage_usec": 15251621,
+        "user_usec": 4121903,
+        "system_usec": 11129718,
+        "nice_usec": 0,
+        "nr_periods": 2026,
+        "nr_throttled": 315,
+        "throttled_usec": 20841531,
+        "nr_bursts": 0,
+        "burst_usec": 0
+      }
+    }
+  },
+  "database": {
+    "count": 8261,
+    "fsync": "on",
+    "synchronous_commit": "on",
+    "full_page_writes": "on"
+  }
+}

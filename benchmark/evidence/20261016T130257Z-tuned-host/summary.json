@@ -1,0 +1,115 @@
+{
+  "label": "tuned-host",
+  "finished_at_utc": "2026-10-16T13:06:56.102280+00:00",
+  "gatling_exit_code": 0,
+  "validity": "valid",
+  "validation": {
+    "run_status_valid": true,
+    "source_unchanged": true,
+    "note": "KO requests and application saturation are reported as measurements; they do not invalidate the run."
+  },
+  "person_count": 31346,
+  "measured_duration_seconds": 216.42,
+  "global": {
+    "requests": 99758,
+    "ok": 74752,
+    "ko": 25006,
+    "error_rate_percent": 25.0667,
+    "requests_per_second": 459.7142857142857,
+    "latency_ms": {
+      "min": 0,
+      "mean": 3226,
+      "p50": 152,
+      "p75": 6066,
+      "p95": 12632,
+      "p99": 16552,
+      "max": 21282,
+      "p99_ok": 18433
+    }
+  },
+  "requests": {
+    "criação": {
+      "requests": 54635,
+      "ok": 37584,
+      "ko": 17051,
+      "error_rate_percent": 31.2089,
+      "requests_per_second": 251.7741935483871,
+      "latency_ms": {
+        "min": 0,
+        "mean": 4095,
+        "p50": 1098,
+        "p75": 9096,
+        "p95": 13952,
+        "p99": 18242,
+        "max": 21278,
+        "p99_ok": 19264
+      }
+    },
+    "busca inválida": {
+      "requests": 4190,
+      "ok": 3504,
+      "ko": 686,
+      "error_rate_percent": 16.3723,
+      "requests_per_second": 19.308755760368662,
+      "latency_ms": {
+        "min": 0,
+        "mean": 1071,
+        "p50": 10,
+        "p75": 269,
+        "p95": 6919,
+        "p99": 14427,
+        "max": 21043,
+        "p99_ok": 14996
+      }
+    },
+    "busca válida": {
+      "requests": 9590,
+      "ok": 6573,
+      "ko": 3017,
+      "error_rate_percent": 31.4599,
+      "requests_per_second": 44.193548387096776,
+      "latency_ms": {
+        "min": 0,
+        "mean": 4291,
+        "p50": 1537,
+        "p75": 9395,
+        "p95": 13876,
+        "p99": 17304,
+        "max": 21282,
+        "p99_ok": 18951
+      }
+    },
+    "consulta": {
+      "requests": 31343,
+      "ok": 27091,
+      "ko": 4252,
+      "error_rate_percent": 13.566,
+      "requests_per_second": 144.43778801843317,
+      "latency_ms": {
+        "min": 0,
+        "mean": 1674,
+        "p50": 8,
+        "p75": 393,
+        "p95": 10994,
+        "p99": 15097,
+        "max": 21002,
+        "p99_ok": 11559
+      }
+    }
+  },
+  "errors": {
+    "status.find.in(201,422,400), but actually found 502": 8659,
+    "status.find.in(201,422,400), but actually found 500": 6676,
+    "status.find.in([200, 209], 304), found 502": 3887,
+    "status.find.in([200, 209], 304), found 500": 2968,
+    "j.i.IOException: Premature close": 1997,
+    "status.find.is(400), but actually found 502": 569,
+    "status.find.in(201,422,400), but actually found 504": 160,
+    "status.find.in([200, 209], 304), found 504": 79,
+    "status.find.is(400), but actually found 504": 11
+  },
+  "report": "gatling/rinhabackendsimulation-20261016130308474/index.html",
+  "simulation_log_sha256": "6562cb37e76dd1526a609a94efd465090aa0084ea5dc6efa1afaece6e33cfa90",
+  "official_commit": "da99faf563c23dca43a5afa2ac31a34ca8cc39e6",
+  "comparability": "Local reproduction; hardware differs from the official 2023 run. This is not an official ranking entry."
+}
