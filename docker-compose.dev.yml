@@ -1,0 +1,6 @@
+# Optional: expose only PostgreSQL for `npm run start:dev` on the host.
+# The competition stack uses docker-compose.yml alone.
+services:
+  db:
+    ports:
+      - "127.0.0.1:5432:5432"

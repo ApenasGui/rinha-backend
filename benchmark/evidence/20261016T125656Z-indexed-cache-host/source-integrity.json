@@ -1,0 +1,21 @@
+{
+  "unchanged": true,
+  "changed_files": [],
+  "file_sha256_after": {
+    "src/pessoa.ts": "f55875456071a6368d3acf61c2695859a3e12e096115ee1557741bc119f2fec8",
+    "src/app.controller.ts": "0ed5b811597dcd65aec50ae88f47f5df56573b2e86770cdd49efd51d3a808fa4",
+    "src/main.ts": "e5b1200faf1d204446ee8c55b61e6116d624ed92ab7da7b24ce8007c5a96982f",
+    "src/app.module.ts": "611be1d5f1c7b87280c07bdd1faa3f41762020307aab76f64091f57971837f65",
+    "src/pessoas.service.ts": "611f8894b9ada77193847c3c338ac4a3cdd6eb88466879dbd5694af3bf5089f3",
+    "infra/init.sql": "10d82c740b9893f8092b217f3d34e43335e8ed6395a6e946f8021f7be6c346a0",
+    "infra/nginx.host.conf": "7aa5be4d1f4f6a7ace2f2f5431415df9cb1c216eadec4cf4b908adec32edce22",
+    "infra/nginx.conf": "e161a71287d48efb360ea85aa739ce618fe1a300e11f44030a752a383caed2f1",
+    "docker-compose.host.yml": "bb1517601333762dee35da113e2f732ef424ef5b673cd196a90c6a546f4fcbeb",
+    "docker-compose.yml": "2f2625978325d08968c793330a130c12c35da5db0c1e693d2b76ed0ea8253abc",
+    "docker-compose.dev.yml": "fafe766cc0fba0ca9725f62bf176164e7527e1c36d2aa5cfe11a0efad243297d",
+    "Dockerfile": "7e9b3530ff62fe4a6332aa19e9df4f5d3266f9750bbc4f578902f7832c1787ad",
+    "package.json": "7b0b41a86d39d72dc600cbfd88864ebe3e44a56af931dcf1df8dfad52f8e0cf6",
+    "package-lock.json": "cfa5da4107a84f3cdd2c0a19012f1d858b33d32f9860284d9893efcbb2f7ef79",
+    "benchmark/official-source.json": "660aed99ce5ad9d1d44c7a42f42fbef4dc949c548195c3b3256c89fc8628b0d4"
+  }
+}

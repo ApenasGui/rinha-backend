@@ -1,0 +1,57 @@
+{
+  "verified_at_utc": "2026-10-16T13:14:18.378098+00:00",
+  "unit_tests": {
+    "command": "npm test",
+    "passed": 5,
+    "failed": 0
+  },
+  "http_contract_tests": {
+    "command": "npm run test:integration",
+    "passed": 51,
+    "failed": 0,
+    "notes": "Executed against the host-network Compose; same application source and image as all four measured runs."
+  },
+  "typecheck_and_build": "passed",
+  "reusable_install_script": "executed successfully, including npm ci, check, test, build, Docker image build and official Gatling preparation",
+  "persistence": {
+    "count_before_restart": 31757,
+    "count_after_restart": 31757,
+    "measurement_count": 31757,
+    "same_person_after_restart": true,
+    "person_id": "1bbd6425-eaed-410a-aa40-76377d30475a",
+    "person_sha256": "495666f9938875462ad163a170ba763951be7f69628808dc6ced4e477adba892",
+    "volume_removed": false
+  },
+  "readiness": {
+    "health": "ok",
+    "representative_search": "passed",
+    "count_endpoint": "passed"
+  },
+  "actual_limits": {
+    "limits": {
+      "api1": {
+        "cpus": 0.35,
+        "memoryBytes": 402653184,
+        "cgroupCpuMax": "35000 100000"
+      },
+      "api2": {
+        "cpus": 0.35,
+        "memoryBytes": 402653184,
+        "cgroupCpuMax": "35000 100000"
+      },
+      "db": {
+        "cpus": 0.65,
+        "memoryBytes": 1744830464,
+        "cgroupCpuMax": "65000 100000"
+      },
+      "nginx": {
+        "cpus": 0.15,
+        "memoryBytes": 268435456,
+        "cgroupCpuMax": "15000 100000"
+      }
+    },
+    "totalCpus": 1.5,
+    "totalMemoryBytes": 2818572288,
+    "cgroupVersion": 2
+  }
+}
